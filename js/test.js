@@ -1,140 +1,84 @@
-// 1
+// data types
+const number = 3;
+const boolean = true;
+const char = "3";
 
+const array = [1, "a", true];
+const string = "string";
 
-// const hours = 22;
-// const minutes = 0;
+const undefinedUndefined = undefined;
+const nullNull = null;
 
-// if (minutes === 0) {
-//   console.log(`${hours} ч.`)
+// conditions
+// if (number === 3) {
+//   console.log("true");
 // } else {
-//   console.log(`${hours} ч. ${minutes} м.`)
+//   console.log("false");
 // }
 
+const num = number != 0 ? true : false;
 
-// 2
-
-// let userInput = prompt(`Введите число`);
-// console.log(userInput);
-// userInput = Number(userInput);
-
-// if (userInput > 0) {
-//   console.log(`Это положительное число`);
-// } else if (userInput === 0) {
-//   console.log('это ноль');
-// } else {
-//   console.log(`это отрицательное число`);
-// }
-
-
-// 3
-
-
-// const a = 40;
-// const b = 130;
-
-// if (a > 100 && b > 100) {
-//   if (a > b) {
-//     console.log(a)
-//   } else {
-//     console.log(b)
-//   }
-// } else {
-//   console.log(b + 512)
-// }
-
-// if (a > 100 && b > 100) {
-//   console.log(a > b ? a : b);
-// } else {
-//   console.log(b + 512);
-// }
-
-// if (a > 100 && b > 100) {
-//   console.log(Math.max(a, b));
-// } else {
-//   console.log(b + 512);
-// }
-
-// 4
-
-// let link = `htts://my-site.com/about`;
-
-// if (!link.endsWith(`/`)) {
-//   link += `/`;
-// }
-
-// console.log(link)
-
-
-// 5
-
-
-// let link = `htts://my-site.com/about`;
-
-// if (link.includes(`my-site`) && !link.endsWith(`/`)) {
-//   link += `/`;
-// }
-// console.log(link)
-
-
-// 6
-
-// больше либо равно 17, меньше или равно 24
-
-// const hours = 75;
-
-// if (hours < 17) {
-//   console.log(`Pedning`);
-// } else if (hours >= 17 && hours <= 24) {
-//   console.log(`Expires`);
-// } else {
-//   console.log(`Overdue`);
-// }
-
-
-// 7
-
-
-// const daysUntilDeadline = 0;
-
-// if (daysUntilDeadline === 0) {
-//   console.log(`Сегодня`);
-// } else if (daysUntilDeadline === 1) {
-//   console.log(`Завтра`);
-// } else if (daysUntilDeadline === 2) {
-//   console.log(`Послезавтра`);
-// } else {
-//   console.log(`Дата в будущем`)
-// }
-
-
-// 8
-
-
-// const daysUntilDeadline = 0;
-
-// switch (daysUntilDeadline) {
+// switch case
+// switch (number) {
 //   case 0:
-//     console.log(`Сегодня`);
+//     console.log("0");
 //     break;
 //   case 1:
-//     console.log(`Завтра`);
-//     break;
-//   case 2:
-//     console.log(`Послезавтра`);
-//     break;
+//     console.log("1");
 //   default:
-//     console.log(`Дата в будущем`);
+//     console.log("Something else");
+//     break;
 // }
 
+// loops
+let arr = [1, 2, 3, 4, 5, 6, 7];
 
-// 9
-
-
-// const max = 97;
-// const min = 20;
-
-// for (let i = min; i <= max; i += 1) {
-//   if (i % 5 === 0) {
-//     console.log(i);
-//   }
+// let i = 0;
+// while (i < 5) {
+//   console.log(arr[i]);
+//   i++;
 // }
+
+// let i = 0;
+// do {
+//   console.log(arr[i]);
+//   i++;
+// } while (i < 0);
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// arr = arr.map((elem) => elem * 2);
+
+// console.log(arr);
+
+// function
+
+function calc(num1, num2, action) {
+  let result;
+
+  switch (action) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num1 / num2;
+      break;
+    default:
+      result = "Somethig went wrong!";
+      break;
+  }
+
+  return result;
+}
+
+const output = calc(3, 6, "+");
+
+console.log(output);
