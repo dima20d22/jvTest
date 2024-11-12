@@ -1,13 +1,13 @@
 // data types
-const number = 3;
-const boolean = true;
-const char = "3";
+// const number = 3;
+// const boolean = true;
+// const char = "3";
 
-const array = [1, "a", true];
-const string = "string";
+// const array = [1, "a", true];
+// const string = "string";
 
-const undefinedUndefined = undefined;
-const nullNull = null;
+// const undefinedUndefined = undefined;
+// const nullNull = null;
 
 // conditions
 // if (number === 3) {
@@ -16,7 +16,7 @@ const nullNull = null;
 //   console.log("false");
 // }
 
-const num = number != 0 ? true : false;
+// const num = number != 0 ? true : false;
 
 // switch case
 // switch (number) {
@@ -31,7 +31,7 @@ const num = number != 0 ? true : false;
 // }
 
 // loops
-let arr = [1, 2, 3, 4, 5, 6, 7];
+// let arr = [1, 2, 3, 4, 5, 6, 7];
 
 // let i = 0;
 // while (i < 5) {
@@ -55,30 +55,30 @@ let arr = [1, 2, 3, 4, 5, 6, 7];
 
 // function
 
-function calc(num1, num2, action) {
-  let result;
+// function calc(num1, num2, action) {
+//   let result;
 
-  switch (action) {
-    case "+":
-      result = num1 + num2;
-      break;
-    case "-":
-      result = num1 - num2;
-      break;
-    case "*":
-      result = num1 * num2;
-      break;
-    case "/":
-      result = num1 / num2;
-      break;
-    default:
-      result = "Somethig went wrong!";
-      break;
-  }
+//   switch (action) {
+//     case "+":
+//       result = num1 + num2;
+//       break;
+//     case "-":
+//       result = num1 - num2;
+//       break;
+//     case "*":
+//       result = num1 * num2;
+//       break;
+//     case "/":
+//       result = num1 / num2;
+//       break;
+//     default:
+//       result = "Somethig went wrong!";
+//       break;
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-const output = calc(3, 6, "+");
+// const output = calc(3, 6, "+");
 
-console.log(output);
+// console.log(output);
