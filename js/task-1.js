@@ -1,9 +1,8 @@
 // task 1
 
 function makeTransaction(quantity, pricePerdroid) {
-  let calc = quantity * pricePerdroid;
   console.log(
-    "You ordered " + quantity + " droids worth " + calc + " credits!"
+    `You ordered ${quantity} droids worth ${quantity * pricePerdroid} credits!`
   );
 }
 

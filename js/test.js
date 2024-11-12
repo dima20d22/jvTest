@@ -82,3 +82,13 @@
 // const output = calc(3, 6, "+");
 
 // console.log(output);
+
+// const arr = [1, 2, 3, 4, 5];
+
+// for (const num of arr) {
+//   console.log(num);
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }

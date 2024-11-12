@@ -390,8 +390,5 @@ let carsDatabase = [
   },
 ];
 
-for (let i = 0; i < carsDatabase.length; i++) {
-  if (carsDatabase[i].isSaled == true) {
-    console.log(carsDatabase[i]);
-  }
-}
+for (let i = 0; i < carsDatabase.length; i++)
+  if (carsDatabase[i].isSaled) console.log(carsDatabase[i].carModel);
