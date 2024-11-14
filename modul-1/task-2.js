@@ -9,5 +9,3 @@ function getShippingMessage(country, price, deliveryFee) {
 getShippingMessage("Germany", 120, 50);
 
 // task 2
-
-function makeArray(firstArray, secondArray, maxLenght) {}
