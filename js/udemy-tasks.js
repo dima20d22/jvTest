@@ -634,11 +634,94 @@
 
 // console.log(allClients);
 
-function getSlice(array, value) {
-  const index = array.indexOf(value);
-  if (index === -1) {
-    return [];
-  }
-  return array.slice(0, index + 1);
-}
-getSlice(["Mango", "Poly", "Ajax"], "Poly");
+// function getSlice(array, value) {
+//   const index = array.indexOf(value);
+//   if (index === -1) {
+//     return [];
+//   }
+//   return array.slice(0, index + 1);
+// }
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Ajax"));
+
+// function createArrayOfNumbers(min, max) {
+//   let sum = [];
+//   for (let i = min; i <= max; i++) {
+//     sum.push(i);
+//   }
+//   return sum;
+// }
+
+// console.log(createArrayOfNumbers(2, 8));
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let i = 0; i < order.length; i++) {
+//     total += order[i];
+//   }
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+// function getEvenNumbers(start, end) {
+//   let sum = [];
+//   for (let i = start; i <= end; i++) {
+//     if (i % 2 === 0) {
+//       sum.push(i);
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(getEvenNumbers(8, 8));
+
+// function getCommonElements(array1, array2) {
+//   const generalArray = [];
+//   for (let i = 0; i < array1.length; i++) {
+//     for (let j = 0; j < array2.length; j++) {
+//       if (array1[i] == array2[j]) {
+//         generalArray.push(array1[i]);
+//       }
+//     }
+//   }
+// }
+
+// function getCommonElements(array1, array2) {
+//   const generalArray = [];
+//   for (let element of array1) {
+//     if (array2.includes(element)) generalArray.push(element);
+//   }
+//   return generalArray;
+// }
+
+// console.log(getCommonElements([1, 2, 3, 6], [2, 4, 6]));
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let i = 0; i < order.length; i++) {
+//     total += order[i];
+//   }
+//   return total;
+// }
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let element of order) {
+//     total += element;
+//   }
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([1, 2]));
+
+// function createReversedArray() {
+//   const generalArray = Array.from(arguments);
+//   return generalArray.toReversed();
+// }
+
+// console.log(createReversedArray(12, 85, 37, 4));
+
+// function calculateTax(amount, taxRate = 0.2) {
+//   return amount * taxRate;
+// }
+
+// console.log(calculateTax(100, 0.3));

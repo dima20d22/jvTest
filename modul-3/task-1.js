@@ -1,5 +1,6 @@
-function figur(formName, volume, size) {}
+function slugify(title) {
+  title = title.toLowerCase();
+  return title.replace(/\s+/g, "-");
+}
 
-function figur(formName, volume, size, preis) {}
-
-function figur(formName, volume, size, preis) {округлить сумму в вверх}
+console.log(slugify("arrays for beginners"));

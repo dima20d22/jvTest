@@ -1,0 +1,9 @@
+function filterArray(numbers, value) {
+  const generalNumber = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] >= value) generalNumber.push(numbers[i]);
+  }
+  return generalNumber;
+}
+
+console.log(filterArray([12, 24, 8, 41, 76], 20));
