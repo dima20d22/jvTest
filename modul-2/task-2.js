@@ -7,3 +7,9 @@ function formatMessage(message, maxLength) {
 }
 
 formatMessage("aghhhh", 2);
+
+// formatMessage("one two three", 7)
+// one two...
+
+// formatMessage("one two three", 6)
+// one...

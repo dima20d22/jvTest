@@ -37,8 +37,7 @@ function getElementWidth(content, padding, border) {
     console.log("text pls only numbers");
     return;
   }
-  const result =
-    contentValue + paddingValue + paddingValue + borderValue + borderValue;
+  const result = contentValue + paddingValue * 2 + borderValue * 2;
 
   console.log(result);
 }
