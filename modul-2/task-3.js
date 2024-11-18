@@ -10,3 +10,6 @@ function checkForSpam(message) {
 }
 
 console.log(checkForSpam("Get best sale offers now!"));
+
+// console.log(checkForSpam("I am a salesman!"));
+// false

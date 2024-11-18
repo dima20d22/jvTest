@@ -1,114 +1,40 @@
-// function figur(formName, volume, size, preis) {}
-
-// function figur(formName, volume, size, preis) {округлить сумму в вверх} cube ball
-
-// function figur(figurNames, length, width, height, material) {
-//   const volume = length * width * height;
-//   figurNames = [
-//     {
-//       figurName: "cuboid",
-//       volume: length * width * height,
-//       material: function () {
-//         switch (material) {
-//           case "tree":
-//             return "tree";
-//           case "metal":
-//             return "metal";
-//           case "aluminum":
-//             return "aluminum";
-//           default:
-//             return "no materials";
-//         }
-//         return figurNames;
-//       },
-//     },
-//     {
-//       figurName: "cube",
-//       volume: length * width * height,
-//       material: function () {
-//         switch (material) {
-//           case "tree":
-//             return "tree";
-//           case "metal":
-//             return "metal";
-//           case "aluminum":
-//             return "aluminum";
-//           default:
-//             return "no materials";
-//         }
-//         return figurNames;
-//       },
-//     },
-//     {
-//       figurName: "ball",
-//       volume: length * width * height,
-//       material: function () {
-//         switch (material) {
-//           case "tree":
-//             return "tree";
-//           case "metal":
-//             return "metal";
-//           case "aluminum":
-//             return "aluminum";
-//           default:
-//             return "no materials";
-//         }
-//         return figurNames;
-//       },
-//     },
-//   ];
-// }
-
-// console.log(figur("cuboid", 3, 4, 5, "tree"));
-
-// for (let i = 0; i < carsDatabase.length; i++)
-//   if (carsDatabase[i].isSaled) console.log(carsDatabase[i].carModel);
-
-// cars.forEach((car) => {
-//   if (car.isSold) {
-//     console.log(car.carFabric + " " + car.carModel + " is sold");
-//   } else {
-//     console.log(car.carFabric + " " + car.carModel + " is still for sale");
-//   }
-// });
-
-// let carsDatabase = [
-//   {
-//     carProducer: "Opel",
-//     carModel: "Astra",
-//     carYear: 2019,
-//     color: "black",
-//     isSaled: false,
-//   },
-//   {
-//     carProducer: "Mercdes",
-//     carModel: "Vito",
-//     carYear: 2013,
-//     color: "white",
-//     isSaled: true,
-//   },
-//
-//
-//   {
-//     carProducer: "Maserati",
-//     carModel: "Diablo",
-//     carYear: 2020,
-//     color: "gray",
-//     isSaled: true,
-//   },
-// ];
-
-function figur(type, shape, dimensions, price) {
-  let figurs = [
-    {
-      figertype,
-    },
-  ];
+function objectCount(type, shape, dimensions) {
+  const pi = 3.14;
+  switch (type) {
+    case "P":
+      switch (shape) {
+        case "cube":
+          return dimensions[0] * 12;
+        case "sphere":
+          return 2 * pi * dimensions[0];
+        default:
+          return "Enter valid shape!";
+      }
+    case "S":
+      switch (shape) {
+        case "cube":
+          return dimensions[0] * dimensions[0] * 6;
+        case "sphere":
+          return pi * dimensions[0] * dimensions[0];
+        default:
+          return "Enter valid shape!";
+      }
+    case "V":
+      switch (shape) {
+        case "cube":
+          return dimensions[0] * dimensions[0] * dimensions[0];
+        case "sphere":
+          return (4 / 3) * pi * dimensions[0] * dimensions[0] * dimensions[0];
+        default:
+          return "Enter valid shape!";
+      }
+    default:
+      return "Enter valid type!";
+  }
 }
-
 // type : "P", "S", "V" ;
-//     shape : "square", "cylinder", "pyramid", ... ;
-//     dimensions : [ ... ] ;
-//     price : price per 100x100x1
+// shape : "cube", "cylinder", "pyramid", ... ;
+// dimensions : [ ... ] ;
+// price : price per 100x100x1
 
-//     return totalPrice;
+console.log(objectCount("V", "sphere", [400]));

@@ -1,4 +1,5 @@
 // data types
+
 // const number = 3;
 // const boolean = true;
 // const char = "3";
@@ -10,6 +11,7 @@
 // const nullNull = null;
 
 // conditions
+
 // if (number === 3) {
 //   console.log("true");
 // } else {
@@ -31,6 +33,7 @@
 // }
 
 // loops
+
 // let arr = [1, 2, 3, 4, 5, 6, 7];
 
 // let i = 0;
@@ -44,6 +47,14 @@
 //   console.log(arr[i]);
 //   i++;
 // } while (i < 0);
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// for (const num of arr) {
+//   console.log(num);
+// }
 
 // for (let i = 0; i < arr.length; i++) {
 //   console.log(arr[i]);
@@ -85,10 +96,35 @@
 
 // const arr = [1, 2, 3, 4, 5];
 
-// for (const num of arr) {
-//   console.log(num);
+// objects
+
+
+// const dog1 = {
+//     name: "A",
+//     legs: 4
 // }
 
-// for (let i = 0; i < arr.length; i++) {
-//   console.log(arr[i]);
+// const dog2 = {
+//     name: "B",
+//     ears: 2
 // }
+
+// // const Dima = Object.create(human)
+// const Dima = {...dog1, ...dog2}
+
+// console.log(Dima);
+
+
+// function test() {
+//     // ...
+//     return {
+//         hair: true, 
+//         legs: 4,
+//         arms : 2
+//     }
+// }
+
+// const {arms, legs: pawns } = test()
+
+// console.log(arms);
+// console.log(pawns);
