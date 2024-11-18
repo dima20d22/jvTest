@@ -97,34 +97,3 @@
 // const arr = [1, 2, 3, 4, 5];
 
 // objects
-
-
-// const dog1 = {
-//     name: "A",
-//     legs: 4
-// }
-
-// const dog2 = {
-//     name: "B",
-//     ears: 2
-// }
-
-// // const Dima = Object.create(human)
-// const Dima = {...dog1, ...dog2}
-
-// console.log(Dima);
-
-
-// function test() {
-//     // ...
-//     return {
-//         hair: true, 
-//         legs: 4,
-//         arms : 2
-//     }
-// }
-
-// const {arms, legs: pawns } = test()
-
-// console.log(arms);
-// console.log(pawns);
