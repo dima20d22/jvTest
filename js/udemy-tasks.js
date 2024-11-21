@@ -1371,15 +1371,15 @@
 //   .toSorted((a, b) => a.localeCompare(b));
 
 // console.log(names);
-function countProperties(obj) {
-  const keys = Object.keys(obj);
-  return keys.length;
-}
+// function countProperties(obj) {
+//   const keys = Object.keys(obj);
+//   return keys.length;
+// }
 
-const user = {
-  name: "Alex",
-  age: 25,
-  city: "Moscow",
-};
+// const user = {
+//   name: "Alex",
+//   age: 25,
+//   city: "Berlin",
+// };
 
-console.log(countProperties(user)); // 3
+// console.log(countProperties(user)); // 3
