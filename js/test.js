@@ -97,3 +97,119 @@
 // const arr = [1, 2, 3, 4, 5];
 
 // objects
+
+// callback functions
+
+// function greetings(namesArr, hi) {
+//   for (const element of namesArr) {
+//     hi(element);
+//   }
+// }
+
+// function sayHi(name) {
+//   console.log("Hello " + name + " !");
+// }
+
+// greetings(["Dima", "Leo", "Hubert"], sayHi);
+
+// function getThirdName(namesArr) {
+//   // ...
+//   return namesArr[2];
+// }
+
+// console.log(getThirdName(["Dima", "Leo", "Hubert"]));
+
+// array methods
+
+const namesArr = ["Dima", "Leo", "Hubert", "Sascha", "Petra", "Calvin"];
+
+// forEach
+
+// let nameStr = "";
+
+// console.log(nameStr);
+
+// namesArr.forEach(function foreach(name) {
+//   nameStr += name + "!";
+// });
+
+// console.log(nameStr);
+
+// arrow functions
+
+// namesArr.forEach((name) => {
+//   nameStr += name + "!";
+// });
+
+// console.log(nameStr);
+
+// map, flatMap
+
+// const newNamesArr = [];
+
+// namesArr.forEach((name) => {
+//   newNamesArr.push(name + "!");
+// });
+
+// const newNamesArr = namesArr.map((name) => name + "!");
+
+// const newNamesArr = namesArr.flatMap((name) => [name + "1!", name + "2!"]);
+
+// console.log(newNamesArr);
+
+// filter
+
+// const newNamesArr = namesArr.filter((name) => name.includes("a"));
+
+// console.log(newNamesArr);
+
+// find
+
+// const newNamesArr = namesArr.find((name) => name.includes("a"));
+
+// console.log(newNamesArr);
+
+// findIndex
+
+// const newNamesArr = namesArr.findIndex((name) => name.includes("a"));
+
+// console.log(newNamesArr);
+
+// every
+
+// const newNamesArr = namesArr.every((name) => name.includes("a"));
+
+// console.log(newNamesArr);
+
+// some
+
+// const newNamesArr = namesArr.some((name) => name.includes("a"));
+
+// console.log(newNamesArr);
+
+// reduce
+
+// let nameStr = "";
+
+// console.log(nameStr);
+
+// namesArr.forEach(function foreach(name) {
+//   nameStr += name + "!";
+// });
+
+// console.log(nameStr);
+
+// const nameStr = namesArr.reduce((nameStr, name) => nameStr + name + "!", "");
+
+// console.log(nameStr);
+
+// method chaining
+
+// const newNamesArr = namesArr.filter((name) => name.includes("a"));
+// const nameStr = newNamesArr.reduce((nameStr, name) => nameStr + name + "!", "");
+
+// const nameStr = namesArr
+//   .filter((name) => name.includes("a"))
+//   .reduce((nameStr, name) => nameStr + name + "!", "");
+
+// console.log(nameStr);
