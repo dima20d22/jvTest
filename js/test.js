@@ -121,7 +121,7 @@
 
 // array methods
 
-const namesArr = ["Dima", "Leo", "Hubert", "Sascha", "Petra", "Calvin"];
+// const namesArr = ["Dima", "Leo", "Hubert", "Sascha", "Petra", "Calvin"];
 
 // forEach
 
