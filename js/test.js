@@ -214,55 +214,117 @@
 
 // console.log(nameStr);
 
-
 // classes
 
-// class Animal {
-//     constructor(animalType, animalName) {
-//         this.animalType = animalType
-//         this.animalName = animalName
-//     }
+class Animal {
+  constructor(animalType, animalName) {
+    this.animalType = animalType;
+    this.animalName = animalName;
+  }
 
-//     #legs = 4
-//     #ears = 2
+  #legs = 4;
+  #ears = 2;
 
-//     voice(sound) {
-//         console.log(sound + " !")
-//     }
+  voice(sound) {
+    console.log(sound + " !");
+  }
 
-//     get legs() {
-//         return this.#legs
-//     }
-//     set legs(number) {
-//         this.#legs = number
-//     }
-// }
+  get legs() {
+    return this.#legs;
+  }
+  set legs(number) {
+    this.#legs = number;
+  }
+}
 
+const dog = new Animal("dog", "Dima");
 
-// const dog = new Animal("dog", "Dima")
+dog.voice("woof woof");
+dog.legs = 5;
+console.log(dog);
 
-// dog.voice("woof woof")
-// dog.legs = 5
-// console.log(dog);
+const cat = new Animal("cat", "Leo");
 
+cat.voice("meow meow");
+console.log(cat);
 
-// const cat = new Animal("cat", "Leo")
+class Fish extends Animal {
+  constructor(animalType, animalName, tailNumber) {
+    super(animalType, animalName);
+    this.tail = tailNumber;
+  }
 
-// cat.voice("meow meow")
-// console.log(cat);
+  swim() {
+    console.log("flap flap");
+  }
+}
 
+const fish = new Fish("fish", "Calvin", 2);
+fish.swim();
+console.log(fish);
 
-// class Fish extends Animal {
-//     constructor(animalType, animalName, tailNumber) {
-//         super(animalType, animalName)
-//         this.tail = tailNumber
-//     }
+//DOM
 
-//     swim() {
-//         console.log("flap flap");
-//     }
-// }
+const arr = [
+  {
+    src: "./",
+    title: "Card nummber 1",
+    img: "./",
+  },
+  {
+    src: "./",
+    title: "Card nummber 2",
+    img: "./",
+  },
+  {
+    src: "./",
+    title: "Card nummber 3",
+    img: "./",
+  },
+  {
+    src: "./",
+    title: "Card nummber 4",
+    img: "./",
+  },
+  {
+    src: "./",
+    title: "Card nummber 5",
+    img: "./",
+  },
+];
+const ul = document.querySelector("ul");
 
-// const fish = new Fish("fish", "Calvin", 2)
-// fish.swim()
-// console.log(fish);
+let start = 0;
+for (let i = 0; i < start + 3; i++) {
+  const li = document.createElement("li");
+  li.innerHTML = (
+    <li>
+      <img src="${arr[i].src}" alt="${arr[i].title}" />
+      <h2>${arr[i].title}</h2>
+      <button>Click me</button>
+    </li>
+  );
+  ul.append(li);
+}
+
+const btn = document.querySelector(".button");
+
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  start++;
+
+  console.log("aaaaaaaaa");
+
+  ul.innerHTML = "";
+  for (let i = start; i < start + 3; i++) {
+    const li = document.createElement("li");
+    li.innerHTML = (
+      <li>
+        <img src="${arr[i].src}" alt="${arr[i].title}" />
+        <h2>${arr[i].title}</h2>
+        <button>Click me</button>
+      </li>
+    );
+    ul.append(li);
+  }
+});
