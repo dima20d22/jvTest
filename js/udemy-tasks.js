@@ -1612,9 +1612,99 @@
 // console.log(mango.isBlacklisted("mango@mail.com")); // false
 // console.log(mango.isBlacklisted("poly@mail.com")); // true
 
-const btn = document.getElementById("btn");
+// const btn = document.getElementById("btn");
+// const body = document.querySelector("body");
 
-// btn.classList.toggle(changeColor);
-btn.addEventListener("click", function () {
-  this.style.background = "blue";
-});
+// btn.addEventListener("click", () => {
+//   if (body.style.background === "blue") {
+//     body.style.background = "white";
+//   } else {
+//     body.style.background = "blue";
+//   }
+// });
+
+// const btn = document.getElementById("btn");
+// const body = document.querySelector("body");
+
+// const style = document.createElement("style");
+// style.textContent = `
+//   .blue-background {
+//     background-color: blue;
+//   }
+// `;
+// document.head.appendChild(style);
+
+// btn.addEventListener("click", () => {
+//   body.classList.toggle("blue-background");
+// });
+
+// const arr = [
+//   {
+//     squere: {
+//       width: "150px",
+//       height: "150px",
+//       "background-color": "green",
+//     },
+//   },
+//   {
+//     rectangle: {
+//       width: "300px",
+//       height: "150px",
+//       "background-color": "green",
+//     },
+//   },
+//   {
+//     circle: {
+//       width: "150px",
+//       height: "150px",
+//       "background-color": "green",
+//       "border-radius": "50%",
+//     },
+//   },
+//   {
+//     oval: {
+//       width: "300px",
+//       height: "150px",
+//       "background-color": "green",
+//       "border-radius": "50%",
+//     },
+//   },
+//   {
+//     trapezoid: {
+//       width: "200px",
+//       "border-bottom": "100px solid green",
+//       "border-left": "30px solid transparent",
+//       "border-right": "30px solid transparent",
+//     },
+//   },
+//   {
+//     parallelogram: {
+//       width: "150px",
+//       height: "100px",
+//       "background-color": "green",
+//       transform: "skew(15deg)",
+//     },
+//   },
+// ];
+
+// function addFigur() {
+//   const divMain = document.getElementsByClassName("main__div");
+//   const div = divMain.createElement("div");
+//   //   let start = 0;
+//   for (let i = 0; i < arr.length; i++) {}
+//   div.innerHTML = arr[i];
+//   divMain.append(div);
+// }
+// function createBoxes() {
+//   const input = document.querySelector("input").value;
+//   const amount = parseInt(input);
+//   for (let i = 0; i < amount; i++) {
+//     const div = document.createElement("div");
+//     div.classList.add("new__box");
+//     box.append(div);
+
+//     div.style.width = `${30 + i * 10}px`;
+//     div.style.height = `${30 + i * 10}px`;
+//     div.style.background = getRandomHexColor();
+//   }
+// }
