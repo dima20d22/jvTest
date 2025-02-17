@@ -1708,3 +1708,44 @@
 //     div.style.background = getRandomHexColor();
 //   }
 // }
+
+const time = document.querySelector('.time')
+const timeSpan = document.querySelector('.timeSpan')
+const figur = document.querySelector('.figur')
+let startTime = Date.now()
+
+function getRandomColor() {
+	var letters = '0123456789ABCDEF'
+	var color = '#'
+	for (var i = 0; i < 6; i++) {
+		color += letters[Math.floor(Math.random() * 16)]
+	}
+	return color
+}
+
+figur.style.backgroundColor = getRandomColor()
+figur.style.display = 'none'
+figur.style.width = '150px'
+figur.style.height = '150px'
+setTimeout(() => {
+	figur.style.display = 'block'
+	startTime = Date.now()
+}, 2000)
+
+figur.addEventListener('click', function (e) {
+	e.preventDefault()
+	let endTime = Date.now()
+	let finishTime = endTime - startTime
+	timeSpan.innerHTML = finishTime / 1000 + ' Sekunden'
+	figur.style.display = 'none'
+	figur.style.backgroundColor = getRandomColor()
+	setTimeout(() => {
+		figur.style.width = Math.random() * 400 + 50 + 'px'
+		figur.style.height = Math.random() * 150 + 50 + 'px'
+		figur.style.position = 'relative'
+		figur.style.top = Math.random() * 600 + 'px'
+		figur.style.left = Math.random() * 1000 + 'px'
+		startTime = Date.now()
+		figur.style.display = 'block'
+	}, '2000')
+})
